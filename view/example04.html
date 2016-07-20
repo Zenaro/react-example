@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>组件也是函数</title>
+	<script type="text/javascript" src="../Lib/react/react.js"></script>
+	<script type="text/javascript" src="../Lib/react/react-dom.js"></script>
+	<script type="text/javascript" src="../Lib/react/browser.min.js"></script>
+</head>
+<body>
+	<div id="container"></div>
+
+	<script type="text/babel">
+		var HelloWorld = React.createClass({
+			render: function() {
+				return (
+					<div>
+						<p>Hello, {this.props.name}!</p>
+						<span>Your age is {this.props.age}</span>
+					</div>
+				);
+			}
+		});
+		ReactDOM.render(
+			<HelloWorld name="Johnny" age="12"/>,
+			document.getElementById('container')
+		);
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2 - 创建 `类`</title>
+	<script type="text/javascript" src="../Lib/react/react.js"></script>
+	<script type="text/javascript" src="../Lib/react/react-dom.js"></script>
+	<script type="text/javascript" src="../Lib/react/browser.min.js"></script>
+</head>
+<body>
+	<div id="container"></div>
+
+	<script type="text/babel">
+		var HelloWorld = React.createClass({
+			render: function() {
+				return <p>Hello, world</p>;
+			}
+		});
+		ReactDOM.render(
+			<HelloWorld/>,
+			document.getElementById('container')
+		);
+	</script>
+</body>
+</html>

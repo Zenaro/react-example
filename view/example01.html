@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1 - 创建第一个组件</title>
+	<script type="text/javascript" src="../Lib/react/react.js"></script>
+	<script type="text/javascript" src="../Lib/react/react-dom.js"></script>
+	<script type="text/javascript" src="../Lib/react/browser.min.js"></script>
+</head>
+<body>
+	<div id="container"></div>
+
+	<script type="text/babel">
+		ReactDOM.render(
+			<p>Hello, wolrd</p>,
+			document.getElementById('container')
+		);
+
+		/*
+		ReactDOM.render(
+			React.createElement('p', null, 'Hello, world'),
+			document.getElementById('container')
+		);
+		*/
+	</script>
+</body>
+</html>
